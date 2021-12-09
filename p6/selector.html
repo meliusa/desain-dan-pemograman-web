@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Jquery</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1").hide();
+                $(".subjudul").hide();
+                $("#par").hide();
+                $("#par.dua").hide();
+                $("div p.teks").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Selamat Datang di Web Saya</h2>
+    <h3 class="subjudul">Nama saya Meliusa mahasiswa TI-2H</h3>
+    <p id="par">Saya tinggal di kota Probolinggo</p>
+    <p id="par" class="dua">Hobi saya adalah mempelajari hal baru</p>
+    <div>
+        <p class="teks">Saya senang pemograman Web</p>
+    </div>
+    <p>Paragraf ini akan selalu tampil</p>
+    <button>Klik saya</button>
+</body>
+
+</html>

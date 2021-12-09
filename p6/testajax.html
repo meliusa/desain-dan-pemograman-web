@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#box").load("http://localhost/minggu6/test-content.html");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <h2>klik tombol untuk menampilkan konten</h2>
+    </div>
+    <button>klik saya</button>
+</body>
+
+</html>
