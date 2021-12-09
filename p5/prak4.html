@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>hapus elemen html</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <p id="p1">paragraf 1</p>
+        <p id="p2">paragraf 2</p>
+    </div>
+    <script>
+        var parent = document.getElementById("mydiv");
+        var child = document.getElementById("p2");
+        parent.removeChild(child);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h2>javascript geolocation api</h2>
+    <p>klik untuk mendapatkan koordinat</p>
+    <button type="button" onclick="getLocation()">klik aku dong</button>
+    <p id="demo"></p>
+    <script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "geolocation is not supported by this browser";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML - "Latitude : " + position.coords.latitude + "<br> Longitude : " + position.coords.longitude;
+        }
+    </script>
+</body>
+
+</html>

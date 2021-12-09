@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>pengenalan js</title>
+</head>
+
+<body>
+    <div id="div">
+        <label for="">nama depan : <input type="text" name="" id="namaDepan"></label><br>
+        <label for="">nama belakang : <input type="text" name="" id="namaBelakang"></label><br>
+        <button type="submit" onclick="getValue()">Cek!</button>
+    </div>
+    <script type="text/javascript">
+        function getValue() {
+            var firstName = document.getElementById("namaDepan").value;
+            var lastName = document.getElementById("namaBelakang").value;
+            var par = document.createElement("p");
+            var node = document.createTextNode("Hallo " + firstName + " " + lastName);
+            par.appendChild(node);
+            document.getElementById("div").appendChild(par);
+        }
+    </script>
+</body>
+
+</html>

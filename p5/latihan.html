@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    tebak umur :
+    <input type="number" name="" id="numb">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+
+            var x = document.getElementById("numb").value;
+            if (x == "") {
+                alert("data tidak boleh kosong");
+            } else {
+                let x = document.getElementById("numb").value;
+                let text;
+                if (isNaN(x) || x < 15 || x > 20) {
+                    text = "hei, umurku ga di antara segitu!";
+                } else {
+                    text = "ya~ umurku diantara segitu, hehe";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        }
+    </script>
+</body>
+
+</html>
